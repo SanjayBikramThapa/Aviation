@@ -1,0 +1,1503 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* starting of navbar style */
+.check-box{
+    visibility: hidden;
+}
+
+.menu-content {
+    font-family: 'Oswald', sans-serif; 
+    padding: 0 0 0 50px;
+}
+.menu-content ul{
+    width: 50%;
+    display:inline-flex;
+    margin-left: 600px;
+    justify-content: space-evenly;
+    z-index: 9999;
+}
+.collapsible-menu {
+    width: 100%;
+    display:inline-flex; 
+    background-color: rgb(223, 219, 219);
+    padding-left:30px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.collapsible-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.collapsible-menu a {
+    text-decoration: none;
+}
+.collapsible-menu label {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 26px;
+    cursor: pointer;
+} 
+.menu-content ul li{
+    padding:15px;
+    display: block;
+    /* z-index: 9999; */
+}
+ul li .dropdown{
+    width:100px;
+    background-color: beige;
+    position:absolute;
+    top: 50px;
+    left: 660px;
+    display: none;
+}
+ .menu-content ul li:hover{
+    background-color: red;
+
+}
+ul li:hover .dropdown{
+    display: block;
+}
+a{
+color: black;
+}
+
+
+/* end of navbar style  */
+
+/* starting of the crousel style */
+.crousel-image{
+    background-image: url('/image/1.jpg');
+    background-repeat: no-repeat; background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+.crousel-image h4{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: #ffff;
+    text-align: start; 
+    padding: 150px 0 0 150px;
+    font-size: 30px;
+}
+.crousel-image h5{
+    width: 50%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color:rgb(235, 84, 14);
+    text-align: start; 
+    padding: 10px 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+}
+.crousel-image h5:hover{
+    background: green;
+}
+.form-control{
+    width: 50%;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: rgba(245, 243, 243, 0.733);
+}
+/* .crousel-image h5{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color:#ffff;
+    text-align: start; 
+    padding: 10px 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+
+} */
+.crousel-image h5:hover{
+    background: green;
+}
+.flex-wrap{
+    width: 100%;
+    display: flex;
+}
+.input-selector input{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+}
+/* end of the craousel style  */
+
+
+/* start of the form selector */
+.form-selector{
+    width: 100%;
+    padding: 20px;
+  
+}
+.form-input input{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.date-picker input{
+    padding: 10px;
+}
+
+.flex-image img{
+    width: 400px;
+    height:390px;
+    top: 280px;
+    position: absolute;
+    left: 29rem;
+}
+.button-book{
+    padding: 10px;
+    margin-left: 50px;
+    border-radius: 4px;
+}
+/* end of the form selector */
+
+/* starting of the search bar */
+
+.search-form{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    background: #051b33;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid rgb(24, 22, 22);
+    padding: 5px;
+}
+
+.search-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #e4e3eb;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.search-form:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.search-form:hover .search-input{
+    display: block;
+}
+
+.search-form:hover .fa{
+    background: #07051a;
+    color: white;
+}
+/* starting of the image slider style */
+.slider-holder
+{
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-holder
+{
+    width: 2400px;
+    background-color: #ffff;
+    height: 400px;
+    clear: both;
+    position: relative;
+
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+.slider-image
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#slider-image-1:target ~ .image-holder
+{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-holder
+{
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-holder
+{
+    left: -1600px;
+}
+.button-holder
+{
+    position: relative;
+    top: -50px;
+}
+
+.slider-change
+{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: brown;
+}
+.image-holder img{
+    height: 100%;
+}
+/* end of the image slider style */
+
+
+
+
+/* starting of the blog card */
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+:root {
+  --color: #3c3163;
+  --transition-time: 0.5s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans';
+  background: #fafafa;
+} */
+
+a {
+  color: inherit;
+}
+
+.cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.card {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+}
+
+/* .card .tags {
+  display: flex;
+}
+
+.card .tags .tag {
+  font-size: 0.75em;
+  background: rgba(255,255,255,0.5);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--transition-time);
+}
+
+.card:hover .tags .tag {
+  background: var(--color);
+  color: white;
+} */
+
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.card:before, .card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.card:before {
+  background: #ddd;
+  width: 250%;
+  height: 250%;
+}
+
+.card:after {
+  background: white;
+  width: 200%;
+  height: 200%;
+}
+
+.card:hover {
+  color: var(--color);
+}
+
+.card:hover:before, .card:hover:after {
+  transform: scale(1);
+}
+/* 
+.card-grid-space num{
+  font-size: 1em;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+} */
+
+.info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+/* @media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+} */
+
+
+/* starting of the video wrapper  */
+
+.video-wrapper{
+    width: 100%;
+    background-color: #e4e3eb;
+    display:flex;
+    border: 0;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    justify-content: end;
+}
+.video-wrapper video{
+    width:40%;
+    background-color: #EFEFEF;
+
+
+}
+.blog-overview{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #EFEFEF;
+
+}
+.blog-overview p{
+  font-size: 15px; 
+  padding: 1px;
+}
+/* starting of the news style */
+.news-image{
+  margin-top: 18px;
+  display: flex;
+}
+.news-image img{
+  width: 15%;
+}
+.news-title{
+  display: block;
+  margin-left: 10px;
+}
+.news-title a{
+text-decoration: none;
+}
+
+.button-more{
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.button-more button{
+  padding: 10px;
+  background-color: #ffff;
+}
+
+/* end of the news style */
+
+
+/* end of the video wrapper */
+
+
+
+
+/* starting of the footer style*/
+.hidden {
+    display: none;
+  }
+  
+  .footer-gray {
+    background-color: #EFEFEF;
+    width: 100%;
+  }
+  
+  .footer-custom {
+    color: #888;
+    font: normal normal 12px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    max-width: 1008px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .footer-custom:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .footer-lists:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .ftr-hdr {
+    color: #000;
+    font: 22px/1.4 'BebasNeueRegular', BebasNeue, 'Bebas Neue', Arial, sans-serif;
+    margin: 1em 0 0;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .ftr-hdr {
+      font-size: 18px;
+    }
+  }
+  
+  .footer-list-wrap {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (min-width: 568px) {
+    .footer-list-wrap {
+      width: 33.3333%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-list-wrap {
+      width: 25%;
+    }
+  }
+  
+  .ftr-links-sub {
+    padding: 0;
+    margin: 0;
+  }
+    
+  .ftr-links-sub li{
+    text-decoration: none;
+  }
+  
+  .ftr-links-sub:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .ftr-links-sub li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 3px 0;
+    color: #888;
+    font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    /*width: 150px;*/
+  }
+  
+  .footer-custom a,
+  .footer-custom a:link,
+  .footer-custom a:visited,
+  .ftr-links-sub li .link {
+    text-decoration: none;
+    color: #888;
+    padding: 5px 0;
+    display: block;
+  }
+  
+  .footer-custom .footer-legal a {
+    display: inline;
+  }
+  
+  .footer-custom a:hover,
+  .footer-custom a:active,
+  .ftr-links-sub li .link:hover {
+    text-decoration: underline;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-custom a, .footer-custom a:link, .footer-custom a:visited, .ftr-links-sub li .link {
+      padding: 0;
+    }
+  }
+  /* BEGIN EMAIL CAPTURE STYLES*/
+  
+  .footer-email {
+    text-align: center;
+  }
+  
+  #ftrEmailForm {
+    height: 44px;
+  }
+  
+  #ftrEmailForm .error {
+    display: none;
+    color: red;
+    text-align: left;
+  }
+  
+  #ftrEmailForm #ftrEmailInput {
+    background: none repeat scroll 0 0 #FFF;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    color: #888;
+    float: left;
+    font: normal normal 14px/1.4 "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 5px;
+    width: 70%;
+    height: 100%;
+  }
+  
+  #ftrEmailForm #ftrEmailInput:hover {
+    border: 1px solid #888;
+  }
+  
+  #ftrEmailForm #ftrEmailInput:focus {
+    border: 1px solid #ef9223;
+    outline: #ef9223 auto 5px;
+  }
+  
+  #ftrEmailForm .button {
+    width: 30%;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    border: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    color: #000;
+    font: normal bold 18px/1 BebasFamily, BebasNeueRegular, "Bebas Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FFF;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e1e1e1));
+    background: -webkit-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -moz-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -ms-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: -o-linear-gradient(top, white 0, #e1e1e1 100%);
+    background: linear-gradient(to bottom, white 0, #e1e1e1 100%);
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+  }
+  
+  #ftrEmailForm .button:hover,
+  #ftrEmailForm .button:active {
+    background: black;
+    color: #FFF;
+    outline: none;
+  }
+  /* BEGIN SOCIAL STYLES*/
+  
+  .footer-social {
+    text-align: center;
+  }
+  
+  .footer-social ul {
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .footer-social ul:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  
+  .footer-social li {
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-lists {
+      width: 100%;
+    }
+    .footer-email {
+      width: 50%;
+      float: left;
+      text-align: left;
+    }
+    .footer-social {
+      width: 45%;
+      margin-left: 5%;
+      float: left;
+      text-align: left;
+    }
+  }
+  
+  @media only screen and (min-width: 1008px) {
+    .footer-lists {
+      width: 66.6666%;
+      float: left;
+    }
+    .footer-email {
+      width: 33.3333%;
+    }
+    .footer-social {
+      width: 33.3333%;
+      float: right;
+      margin-left: 0;
+    }
+  }
+  
+  .footer-legal {
+    padding: 15px 0 0;
+    clear: left;
+  }
+  
+  .footer-payment {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer-legal {
+      width: 66.6666%;
+      float: left;
+    }
+    .footer-payment {
+      width: 33.3333%;
+      float: left;
+    }
+  }
+  
+  @media only screen and (min-width: 1008px) {
+    .footer-payment {
+      text-align: left;
+    }
+  }
+  
+  .footer-payment ul {
+    padding: 0;
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  .footer-payment ul li {
+    display: inline-block;
+    margin: 0 6px;
+  }
+  
+  @media only screen and (min-width: 1008px) {
+    .footer-payment ul li.ftr-stella {
+      margin-left: 0;
+    }
+  }
+  
+  .ftr-bbb span,
+  .ftr-stella span {
+    background-image: url("http://cache1.artprintimages.com/images/jump_pages/rebrand2/images/subnav2.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ftr-bbb span {
+    background-position: -339px -8px;
+    width: 96px;
+  }
+  
+  .ftr-stella span {
+    background-position: -339px -107px;
+    width: 57px;
+  }
+
+  /* end of the footer style */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for responsive screen in different platform  */
+@media screen and (max-width:1024px) {
+    .collapsible-menu {
+        width: 100%;
+        display:flex; 
+        background-color: rgb(223, 219, 219);
+        padding-left:30px;
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    }
+    .collapsible-menu label {
+        font-family: 'Sedgwick Ave Display', cursive;
+        font-size: 30px;
+        display:block;
+        cursor: pointer;
+        padding: 10px 0 10px 60px;
+    }
+    .menu-content ul{
+        width: 50%;
+        display:inline-flex;
+        margin-left: 200px;
+        justify-content: space-evenly;
+    }
+    ul li .dropdown{
+        width:150px;
+        background-color: beige;
+        position:absolute;
+        top: 65px;
+        left: 600px;
+        display: none;
+    }
+        /* end of the navbar */
+
+    /* start of the crousel background image */
+    .crousel-image{
+        height:500px;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+    }
+    .crousel-image h4{
+        font-family: 'Sedgwick Ave Display', cursive;
+        color: #ffff;
+        text-align: start; 
+        padding: 50px;
+        font-size: 20px;
+    }
+    .crousel-image h5{
+        font-family: 'Sedgwick Ave Display', cursive;
+        color:#ffff;
+        text-align: start; 
+        padding: 10px 20px;
+        font-size: 10px;
+        box-sizing: border-box;
+    
+    }
+    .crousel-image h5:hover{
+        background: green;
+    }
+    .form-control{
+        width: 50%;
+        padding-bottom: 50px;
+        margin-top: 10px;
+        margin-left: 30px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .flex-wrap{
+        display: flex;
+    }
+    .input-selector input{
+        padding-right: 5px;
+        background-color: #ffff;
+        border: 2px solid white;
+    }
+    /* for grid card */
+    .cards-wrapper {
+      display: flex;
+      padding: 0;
+    }
+
+    .news-image{
+      margin-top: 18px;
+      display: block;
+    }
+    .news-image img{
+      width: 100%;
+    }
+    .video-wrapper{
+      width: 100%;
+      background-color: #e4e3eb;
+      display:block;
+      border: 0;
+      padding-top: 2px;
+      padding-bottom: 1px;
+      justify-content: end;
+  }
+  .video-wrapper video{
+      width:100%;
+      background-color: #EFEFEF;
+  
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* for tablet */
+@media screen and (max-width:780px){
+    .menu-content ul{
+        display:block;
+        margin-left: 0;
+ 
+    }
+    .menu-content ul li{
+        display: block;
+    }
+    .menu-content ul{
+        display:inline-block;
+    }
+    .collapsible-menu{
+        display:block;
+        background-color: rgb(223, 219, 219);
+        padding-left:30px;
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    }
+    .collapsible-menu label {
+        font-family: 'Sedgwick Ave Display', cursive;
+        font-size: 20px;
+        display:inline-block;
+        cursor: pointer;
+        background: url(/image/menu.svg) no-repeat left center;
+        padding: 10px 0 10px 60px;
+    }
+    input#menu {
+        display: none;
+    }
+    input:checked +label {
+        background-image: url(/image/close.svg);
+    }
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        font-family: 'Oswald', sans-serif; 
+        padding: 0 0 0 50px;
+    }
+    /* Toggle Effect */
+    input:checked ~ label {
+        background-image: url(/image/close.svg);
+    }
+    input:checked ~ .menu-content {
+        max-height: 50%;
+    }
+    ul li .dropdown{
+        width:150px;
+        background-color: beige;
+        position:absolute;
+        top: 29%;
+        left: 150px;
+        display: none;
+    }
+     ul li a:hover {
+        background-color: red;
+    
+    }
+    ul li:hover .dropdown{
+        display: block;
+    }
+        /* end of the navbar */
+
+    /* start of the crousel background image */
+    .crousel-image{
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+    }
+    .crousel-image h4{
+        font-family: 'Sedgwick Ave Display', cursive;
+        color: #ffff;
+        text-align: start; 
+        padding: 50px;
+        font-size: 20px;
+    }
+    .crousel-image h5{
+        width: 60%;
+        font-family: 'Sedgwick Ave Display', cursive;
+        color:#ffff;
+        text-align: start; 
+        padding: 10px 20px;
+        font-size: 15px;
+        box-sizing: border-box;
+    
+    }
+    .crousel-image h5:hover{
+        background: green;
+    }
+    .form-control{
+        width: 50%;
+        padding-left: 10px;
+        padding-bottom: 50px;
+        margin-top: 10px;
+        margin-left: 30px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .flex-wrap{
+        display: flex;
+    }
+    .input-selector input{
+        padding-right: 5px;
+        background-color: #ffff;
+        border: 2px solid white;
+    }
+        /* start of the form selector */
+.form-selector{
+    width: 100%;
+    padding: 2px;
+  
+}
+.form-control label{
+    font-size: 15px;
+}
+.form-input input{
+    width: 90%;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.date-picker input{
+    padding: 3px;
+}
+.button-book{
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+/* end of the form selector */
+
+/* for grid card */
+.cards-wrapper {
+  width: 90%;
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+.card {
+  height: 20em;
+  width: 35em;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 1em;
+  /* padding: 0.5em; */
+  /*margin: 2em;*/
+  display: inline-flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+/* .card-grid-space{
+} */
+
+.card h1 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.card p {
+  font-size: 0.55em;
+  font-family: 'Open Sans';
+  margin-top: 0.3em;
+}
+
+.card .tags {
+  display: block;
+}
+.card .date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.55em;
+  padding: 1em;
+  line-height: 0.75em;
+  opacity: .8;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile view */
+@media screen and (max-width:560px){
+    .menu-content ul{
+        display:inlinep-block;
+    }
+    .menu-content ul li{
+        display: block;
+    }
+    .collapsible-menu{
+        display:block;
+        background-color: rgb(223, 219, 219);
+        padding-left:30px;
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    }
+    .collapsible-menu label {
+        font-family: 'Sedgwick Ave Display', cursive;
+        font-size: 20px;
+        display:inline-block;
+        cursor: pointer;
+        background: url(/image/menu.svg) no-repeat left center;
+        padding: 10px 0 10px 60px;
+    }
+    input#menu {
+        display: none;
+    }
+    input:checked +label {
+        background-image: url(/image/close.svg);
+    }
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        font-family: 'Oswald', sans-serif; 
+        padding: 0 0 0 50px;
+    }
+    /* Toggle Effect */
+    input:checked ~ label {
+        background-image: url(/image/close.svg);
+    }
+    input:checked ~ .menu-content {
+        max-height: 50%;
+    }
+    ul li .dropdown{
+        width:120px;
+        background-color: beige;
+        position:absolute;
+        top: 29%;
+        left: 100px;
+        display: none;
+    }
+     ul li a:hover {
+        background-color: red;
+    
+    }
+    ul li:hover .dropdown{
+        display: block;
+    }
+        /* end of the navbar */
+
+    /* start of the crousel background image */
+    .crousel-image{
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+    }
+    .crousel-image h4{
+        font-family: 'Sedgwick Ave Display', cursive;
+        color: #ffff;
+        text-align: start; 
+        padding: 10px;
+        font-size: 20px;
+    }
+    .crousel-image h5{
+        font-family: 'Sedgwick Ave Display', cursive;
+        color:#ffff;
+        text-align: start; 
+        padding: 10px 20px;
+        font-size: 10px;
+        box-sizing: border-box;
+    
+    }
+    .crousel-image h5:hover{
+        background: green;
+    }
+    .form-control{
+        width: 50%;
+        padding-bottom: 50px;
+        margin-top: 10px;
+        padding-left: 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .flex-wrap{
+        display: flex;
+    }
+    .input-selector input{
+        background-color: #ffff;
+        border: 2px solid white;
+        margin-top: 5px;
+        padding: 2px;
+        margin-left: 0;
+    }
+        /* start of the form selector */
+.form-selector{
+    width: 100%;
+    padding: 2px;
+  
+}
+.form-input input{
+    width: 90%;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.date-picker input{
+    padding: 3px;
+}
+.button-book{
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+/* end of the form selector */
+/* for grid card */
+.cards-wrapper {
+display: block;
+}   
+}
+
+
+
+
+
+
+
+/*  for small mobile view  */
+@media screen and (max-width:320px){
+    .menu-content ul{
+        display:inline-block;
+        width: 50%;
+        justify-content: start;
+    }
+    .menu-content ul li{
+        display: block;
+    }
+    .collapsible-menu{
+        display:inline-block;
+        background-color: rgb(223, 219, 219);
+        padding-left:30px;  
+        box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    }
+    .collapsible-menu label {
+        font-family: 'Sedgwick Ave Display', cursive;
+        font-size: 20px;
+        display:inline-block;
+        cursor: pointer;
+        background: url(/image/menu.svg) no-repeat left center;
+        /* padding: 10px 0 10px 60px; */
+    }
+    input#menu {
+        display: none;
+    }
+    input:checked +label {
+        background-image: url(/image/close.svg);
+    }
+    .menu-content {
+        max-height: 0;
+        overflow: hidden;
+        font-family: 'Oswald', sans-serif; 
+        /* padding: 0 0 0 50px; */
+    }
+    /* Toggle Effect */
+    input:checked ~ label {
+        background-image: url(/image/close.svg);
+    }
+    input:checked ~ .menu-content {
+        max-height: 50%;
+    }
+    ul li .dropdown{
+        width:100px;
+        background-color: beige;
+        position:absolute;
+        top: 31%;
+        left: 100px;
+        display: none;
+    }
+     ul li a:hover {
+        background-color: red;
+    
+    }
+    ul li:hover .dropdown{
+        display: block;
+    }
+    /* end of the navbar */
+
+    /* start of the crousel background image */
+    .crousel-image{
+        width: 100%;
+        display: inline-block;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 20px;
+    }
+    .crousel-image h4{
+        font-family: 'Sedgwick Ave Display', cursive;
+        color: #ffff;
+        text-align: start; 
+        padding: 20px;
+        font-size: 15px;
+    }
+    .crousel-image h5{
+        width: 100%;
+        display: inline-block;
+        font-family: 'Sedgwick Ave Display', cursive;
+        color:#ffff;
+        text-align: start; 
+        padding: 10px 20px;
+        font-size: 10px;
+        box-sizing: border-box;
+    
+    }
+    .crousel-image h5:hover{
+        background: green;
+    }
+    .form-control{
+        width: 60%;
+        height: 800px;
+        padding-bottom: 50px;
+        margin-top: 5px;
+        margin-left: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .form-control label{
+        font-size: 10px;
+    }
+    .input-selector input{
+        background-color: #ffff;
+        border: 2px solid white;
+        margin-top: 5px;
+        padding: 2px;
+        margin-left: 0;
+    }
+    /* start of the form selector */
+.form-selector{
+    width: 100%;
+    padding: 2px;
+  
+}
+.form-input input{
+    width: 90%;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+.date-picker input{
+    padding: 3px;
+}
+.button-book{
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+/* end of the form selector */
+.cards-wrapper {
+  display: block;
+  padding: 0;
+  } 
+  .card {
+    height: 20em;
+    width: 15em;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 1em;
+    /* padding: 0.5em; */
+    /*margin: 2em;*/
+    display: inline-flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 5em -1em black;
+    transition: all, var(--transition-time);
+    position: relative;
+    overflow: hidden;
+    border: 10px solid #ccc;
+    text-decoration: none;
+  }
+  /* starting of the video blog */
+  .video-wrapper{
+    background-color: #e4e3eb;
+    display:block;
+    border: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    justify-content: start;
+}
+.video-wrapper video{
+    width: 100%;
+
+}
+.blog-overview{
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #EFEFEF;
+
+}
+.blog-overview p{
+  font-size: 15px; 
+  padding: 1px;
+}
+/* starting of the news style */
+.news-image{
+  margin-top: 18px;
+  display: block;
+}
+.news-image img{
+  width: 100%;
+}
+.news-title{
+  display: block;
+  margin-left: 10px;
+}
+.news-title a{
+text-decoration: none;
+}
+
+.button-more{
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.button-more button{
+  padding: 10px;
+  background-color: #ffff;
+}
+
+/* end of the news style */
+}
